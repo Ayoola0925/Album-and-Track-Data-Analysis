@@ -50,7 +50,8 @@ GROUP BY a.id, a.title;
 
 
 
-![Track Count](.track-count.png)
+
+![Track Count](https://github.com/user-attachments/assets/6c60df24-ed7c-4667-b1a9-dd739a648a6b)
 
 
 
@@ -72,6 +73,9 @@ SELECT title
 FROM track 
 WHERE duration = (SELECT MAX(duration) FROM track);
 
+
+
+
 Explanation:
 
 Subquery: Finds the maximum track duration from the track table.
@@ -90,6 +94,9 @@ FROM album a
 LEFT JOIN track t ON a.id = t.album_id 
 GROUP BY a.id, a.title;
 
+
+
+
 Explanation:
 
 SUM: Aggregates the total track duration for each album.
@@ -105,6 +112,10 @@ sql
 
 DELETE FROM track 
 WHERE album_id IN (1, 11) AND track_number BETWEEN 6 AND 8;
+
+
+
+
 
 Explanation:
 
@@ -135,6 +146,9 @@ UPDATE track
 SET duration = 1050 
 WHERE track_number < 4;
 
+
+
+
 Explanation:
 
 WHERE clause: Ensures only tracks with a track_number below 4 are updated.
@@ -158,6 +172,9 @@ SET SQL_SAFE_UPDATES = 1;
 ## Screenshots of Queries and Results
 
 Below are the screenshots of the queries executed and their results, showcasing the steps taken and the outcomes achieved throughout the project.
+
+
+
 
 
 ## Conclusion
