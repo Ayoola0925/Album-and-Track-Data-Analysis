@@ -1,4 +1,4 @@
-#### Album-and-Track-Data-Analysis
+#### ALBUM-AND-TRACK-DATA-ANALYSIS
 
 
 
@@ -73,6 +73,7 @@ SELECT title
 FROM track 
 WHERE duration = (SELECT MAX(duration) FROM track);
 
+![Highest duration](https://github.com/user-attachments/assets/07cf8743-e590-40a6-9731-eb9ed45d62e2)
 
 
 
@@ -94,6 +95,7 @@ FROM album a
 LEFT JOIN track t ON a.id = t.album_id 
 GROUP BY a.id, a.title;
 
+![Total Duration](https://github.com/user-attachments/assets/8b39abe6-8666-489b-95c4-b11580dbb062)
 
 
 
@@ -114,6 +116,7 @@ DELETE FROM track
 WHERE album_id IN (1, 11) AND track_number BETWEEN 6 AND 8;
 
 
+![Delete Track](https://github.com/user-attachments/assets/035602a9-25ab-46cc-9375-b4c01880dd48)
 
 
 
@@ -146,6 +149,10 @@ UPDATE track
 SET duration = 1050 
 WHERE track_number < 4;
 
+![Track Update](https://github.com/user-attachments/assets/59719682-bd30-4de6-9088-8e1809adfa8e)
+
+
+![Select Update](https://github.com/user-attachments/assets/74e7a602-b7fb-49cf-9e8f-91df88681c87)
 
 
 
@@ -174,7 +181,11 @@ SET SQL_SAFE_UPDATES = 1;
 Below are the screenshots of the queries executed and their results, showcasing the steps taken and the outcomes achieved throughout the project.
 
 
+![Track Table](https://github.com/user-attachments/assets/fe780e1d-b229-40e3-b1d3-649deedc7fdb)
 
+
+
+![Album Table](https://github.com/user-attachments/assets/65f2982e-bf82-4376-99f0-a199a4bc043e)
 
 
 ## Conclusion
